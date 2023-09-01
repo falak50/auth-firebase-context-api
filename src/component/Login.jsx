@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Navigate } from 'react-router-dom';
 import { AuthContext } from './providers/AuthProviders';
 
 const Login = () => {
@@ -20,6 +20,8 @@ const Login = () => {
         singIn(email,password)
         .then(result =>{
             console.log(result.user);
+            event.target.reset();
+           
         })
         .catch(error=>{
             console.log(error);
