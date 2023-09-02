@@ -14,3 +14,7 @@
  * 2. auth provider will ahve auth and pass email and password
  * 
  */
+
+/**
+ * 1.private Route
+ */
